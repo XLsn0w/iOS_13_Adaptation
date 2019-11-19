@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// SceneDelegate 为iPadOS开发
 @interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
 
 @property (strong, nonatomic) UIWindow * window;
