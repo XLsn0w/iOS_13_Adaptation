@@ -16,6 +16,7 @@
 		04407CF92383836700E143E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04407CF82383836700E143E6 /* main.m */; };
 		04407D032383836700E143E6 /* iOS_13_AdaptationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04407D022383836700E143E6 /* iOS_13_AdaptationTests.m */; };
 		04407D0E2383836800E143E6 /* iOS_13_AdaptationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04407D0D2383836800E143E6 /* iOS_13_AdaptationUITests.m */; };
+		04407DA62384CA6700E143E6 /* iOS13Adaptation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04407DA52384CA6700E143E6 /* iOS13Adaptation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		04407D092383836800E143E6 /* iOS_13_AdaptationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_13_AdaptationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04407D0D2383836800E143E6 /* iOS_13_AdaptationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_13_AdaptationUITests.m; sourceTree = "<group>"; };
 		04407D0F2383836800E143E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04407DA42384CA6700E143E6 /* iOS13Adaptation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS13Adaptation.h; sourceTree = "<group>"; };
+		04407DA52384CA6700E143E6 /* iOS13Adaptation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS13Adaptation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				04407CE72383836400E143E6 /* AppDelegate.m */,
 				04407CE92383836400E143E6 /* SceneDelegate.h */,
 				04407CEA2383836400E143E6 /* SceneDelegate.m */,
+				04407DA42384CA6700E143E6 /* iOS13Adaptation.h */,
+				04407DA52384CA6700E143E6 /* iOS13Adaptation.m */,
 				04407CEC2383836400E143E6 /* ViewController.h */,
 				04407CED2383836400E143E6 /* ViewController.m */,
 				04407CEF2383836400E143E6 /* Main.storyboard */,
@@ -269,6 +274,7 @@
 			files = (
 				04407CEE2383836400E143E6 /* ViewController.m in Sources */,
 				04407CE82383836400E143E6 /* AppDelegate.m in Sources */,
+				04407DA62384CA6700E143E6 /* iOS13Adaptation.m in Sources */,
 				04407CF92383836700E143E6 /* main.m in Sources */,
 				04407CEB2383836400E143E6 /* SceneDelegate.m in Sources */,
 			);
