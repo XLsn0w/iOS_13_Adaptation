@@ -21,8 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()
         
         
+        // 判断系统来区分是否调用SceneDelegate
         if #available(iOS 13, *) {
-            
+            //不初始化window
+            //会走SceneDelegate里面的window
         } else {
             window = UIWindow.init()
             window?.frame = UIScreen.main.bounds
