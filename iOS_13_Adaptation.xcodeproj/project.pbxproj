@@ -16,7 +16,8 @@
 		04407CF92383836700E143E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04407CF82383836700E143E6 /* main.m */; };
 		04407D032383836700E143E6 /* iOS_13_AdaptationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04407D022383836700E143E6 /* iOS_13_AdaptationTests.m */; };
 		04407D0E2383836800E143E6 /* iOS_13_AdaptationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04407D0D2383836800E143E6 /* iOS_13_AdaptationUITests.m */; };
-		04407DA62384CA6700E143E6 /* iOS13Adaptation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04407DA52384CA6700E143E6 /* iOS13Adaptation.m */; };
+		04407DAF2386545900E143E6 /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04407DAC2386545900E143E6 /* Adapter.m */; };
+		04407DB02386545900E143E6 /* AppAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04407DAE2386545900E143E6 /* AppAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +56,10 @@
 		04407D092383836800E143E6 /* iOS_13_AdaptationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_13_AdaptationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04407D0D2383836800E143E6 /* iOS_13_AdaptationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_13_AdaptationUITests.m; sourceTree = "<group>"; };
 		04407D0F2383836800E143E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04407DA42384CA6700E143E6 /* iOS13Adaptation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS13Adaptation.h; sourceTree = "<group>"; };
-		04407DA52384CA6700E143E6 /* iOS13Adaptation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS13Adaptation.m; sourceTree = "<group>"; };
+		04407DAB2386545800E143E6 /* iOS_13_Adaptation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS_13_Adaptation-Bridging-Header.h"; sourceTree = "<group>"; };
+		04407DAC2386545900E143E6 /* Adapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
+		04407DAD2386545900E143E6 /* Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
+		04407DAE2386545900E143E6 /* AppAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +114,8 @@
 				04407CE72383836400E143E6 /* AppDelegate.m */,
 				04407CE92383836400E143E6 /* SceneDelegate.h */,
 				04407CEA2383836400E143E6 /* SceneDelegate.m */,
-				04407DA42384CA6700E143E6 /* iOS13Adaptation.h */,
-				04407DA52384CA6700E143E6 /* iOS13Adaptation.m */,
+				04407DB12386547400E143E6 /* iOS13Adaptation */,
+				04407DAE2386545900E143E6 /* AppAdapter.swift */,
 				04407CEC2383836400E143E6 /* ViewController.h */,
 				04407CED2383836400E143E6 /* ViewController.m */,
 				04407CEF2383836400E143E6 /* Main.storyboard */,
@@ -120,6 +123,7 @@
 				04407CF42383836700E143E6 /* LaunchScreen.storyboard */,
 				04407CF72383836700E143E6 /* Info.plist */,
 				04407CF82383836700E143E6 /* main.m */,
+				04407DAB2386545800E143E6 /* iOS_13_Adaptation-Bridging-Header.h */,
 			);
 			path = iOS_13_Adaptation;
 			sourceTree = "<group>";
@@ -140,6 +144,15 @@
 				04407D0F2383836800E143E6 /* Info.plist */,
 			);
 			path = iOS_13_AdaptationUITests;
+			sourceTree = "<group>";
+		};
+		04407DB12386547400E143E6 /* iOS13Adaptation */ = {
+			isa = PBXGroup;
+			children = (
+				04407DAD2386545900E143E6 /* Adapter.h */,
+				04407DAC2386545900E143E6 /* Adapter.m */,
+			);
+			path = iOS13Adaptation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +222,7 @@
 				TargetAttributes = {
 					04407CE22383836400E143E6 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					04407CFD2383836700E143E6 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -274,7 +288,8 @@
 			files = (
 				04407CEE2383836400E143E6 /* ViewController.m in Sources */,
 				04407CE82383836400E143E6 /* AppDelegate.m in Sources */,
-				04407DA62384CA6700E143E6 /* iOS13Adaptation.m in Sources */,
+				04407DB02386545900E143E6 /* AppAdapter.swift in Sources */,
+				04407DAF2386545900E143E6 /* Adapter.m in Sources */,
 				04407CF92383836700E143E6 /* main.m in Sources */,
 				04407CEB2383836400E143E6 /* SceneDelegate.m in Sources */,
 			);
@@ -445,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOS_13_Adaptation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,6 +469,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xlsn0w.iOS-13-Adaptation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS_13_Adaptation/iOS_13_Adaptation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOS_13_Adaptation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,6 +489,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xlsn0w.iOS-13-Adaptation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS_13_Adaptation/iOS_13_Adaptation-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -476,6 +498,7 @@
 		04407D162383836800E143E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOS_13_AdaptationTests/Info.plist;
@@ -495,6 +518,7 @@
 		04407D172383836800E143E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOS_13_AdaptationTests/Info.plist;
@@ -514,6 +538,7 @@
 		04407D192383836800E143E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOS_13_AdaptationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,6 +556,7 @@
 		04407D1A2383836800E143E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOS_13_AdaptationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
